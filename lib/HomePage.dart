@@ -1,13 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:gayux/purchases/purchases_store.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
-
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    init();
+    super.initState();
+  }
+
+  Future init() async {
+    await PurchasesStore().init();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
