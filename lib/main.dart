@@ -12,15 +12,11 @@ import 'package:gayux/login/authServices.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 
-
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await PurchaseApi.init();
   await PurchasesStore().init();
   await Firebase.initializeApp();
- 
-  
-
 
   runApp(prov.MultiProvider(
     providers: [

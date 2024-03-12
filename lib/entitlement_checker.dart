@@ -12,7 +12,6 @@ class EntitlementChecker extends StatefulWidget {
 }
 
 class _EntitlementCheckerState extends State<EntitlementChecker> {
-
   @override
   void initState() {
     init();
@@ -23,13 +22,12 @@ class _EntitlementCheckerState extends State<EntitlementChecker> {
     await PurchasesStore().init();
   }
 
-
   @override
   Widget build(BuildContext context) {
-    return Observer(
-        builder: (context) {
-          bool entitlement = PurchasesStore().hasMonthlyEntitlement || PurchasesStore().hasAnnualEntitlement;
-          return entitlement ? HomePage() : HomeScreenPayement();
+    return Observer(builder: (context) {
+      bool entitlement = PurchasesStore().hasMonthlyEntitlement ||
+          PurchasesStore().hasAnnualEntitlement;
+      return entitlement ? const HomeScreenPayement() : const HomePage();
     });
   }
 }

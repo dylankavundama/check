@@ -9,6 +9,8 @@ import 'package:gayux/login/authServices.dart';
 import 'package:gayux/purchases/home_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../entitlement_checker.dart';
+
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -134,7 +136,7 @@ class _LoginState extends State<Login> {
                 if (value.user != null) {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                        builder: (context) => const HomeScreenPayement()),
+                        builder: (context) => const EntitlementChecker()),
                   );
                 }
               },
