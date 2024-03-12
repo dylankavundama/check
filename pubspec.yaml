@@ -1,0 +1,117 @@
+name: gayux
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.2.0+36
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+  
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  build_runner:
+  purchases_flutter:
+  mobx_codegen:
+
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_mobile_ads: ^3.1.0
+  flutter_bloc: ^8.1.3
+  youtube_player_flutter: ^8.1.2
+  font_awesome_flutter: ^10.4.0
+  shimmer: ^3.0.0
+  flutter_svg:
+  share: ^2.0.4
+  url_launcher: ^6.1.11
+  video_player: ^2.4.10
+  uri: ^1.0.0
+  http:
+
+
+  shared_preferences: ^2.0.8
+##
+  google_fonts: 
+  firebase_auth: 
+  google_sign_in: 
+  firebase_core:
+  firebase_messaging:
+  provider: 
+  intl: 
+  flutter_staggered_grid_view: ^0.4.0
+  beamer: ^0.14.1
+  hovering: ^1.0.4
+  like_button: ^2.0.5
+
+ 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  purchases_flutter:
+  provider:
+  flutter_mobx:
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    # - assets/images/
+    - assets/
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
